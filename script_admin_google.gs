@@ -6,7 +6,7 @@ function myFunction() {
   {
     for (var index2 of index)
       Logger.log(index2);
-      moverOU(index2)
+      moverOU(index2);
   }
 }
 function readRange(spreadsheetId) {
@@ -16,7 +16,7 @@ function readRange(spreadsheetId) {
 
 function moverOU(emailAddress){
   var user = AdminDirectory.Users.get(emailAddress);
-  var orgunittomove="INSERT OU PATH"  
+  var orgunittomove="INSERT OU PATH";
   var sucesso = 0;
   
   user.orgUnitPath = orgunittomove;
